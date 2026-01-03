@@ -148,8 +148,8 @@ function initializeScrollAnimations() {
         });
     }, observerOptions);
     
-    // Observe all cards and sections
-    const animatedElements = document.querySelectorAll('.card, section > .container > .row');
+    // Observe cards and sections with animate class
+    const animatedElements = document.querySelectorAll('.card, section[id]');
     animatedElements.forEach(el => observer.observe(el));
 }
 
